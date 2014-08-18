@@ -26,7 +26,7 @@
 
 在需要调试的代码中使用以下方式引用调试模块:
 
-	import "github.com/realint/dbgutil"
+	import "github.com/chinamerp/dbgutil"
 
 示例 - 输出变量
 =======
