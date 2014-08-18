@@ -66,9 +66,9 @@ type breaker struct {
 // 根据条件暂停程序并打印堆栈信息，回车后继续运行
 //
 func (this breaker) Break(condition bool) {
+	fmt.Fprintf(os.Stderr, "\n[Stack]\n%s", Stack(2, ""))
+	fmt.Fprint(os.Stderr, "\npress ENTER to continue")
 	if condition {
-		fmt.Fprintf(os.Stderr, "\n[Stack]\n%s", Stack(2, ""))
-		fmt.Fprint(os.Stderr, "\npress ENTER to continue")
 		fmt.Scanln()
 	}
 }
@@ -93,7 +93,7 @@ func Break() {
 
 	log.Print(buf)
 
-	fmt.Scanln()
+	//	fmt.Scanln()
 }
 
 type pointerInfo struct {
