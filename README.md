@@ -20,7 +20,7 @@
 
 首选方式:
 
-	go get github.com/realint/dbgutil
+	go get github.com/chinamerp/dbgutil
 
 也可以手工从github下载最新版的代码放到自己项目中。
 
