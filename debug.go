@@ -67,8 +67,8 @@ type breaker struct {
 //
 func (this breaker) Break(condition bool) {
 	fmt.Fprintf(os.Stderr, "\n[Stack]\n%s", Stack(2, ""))
-	fmt.Fprint(os.Stderr, "\npress ENTER to continue")
 	if condition {
+		fmt.Fprint(os.Stderr, "\npress ENTER to continue")
 		fmt.Scanln()
 	}
 }
@@ -89,11 +89,11 @@ func Break() {
 
 	fmt.Fprintf(buf, "\n[Stack]\n%s", Stack(2, ""))
 
-	fmt.Fprintf(buf, "\npress ENTER to continue")
+	//fmt.Fprintf(buf, "\npress ENTER to continue")
 
 	log.Print(buf)
 
-	//	fmt.Scanln()
+	//fmt.Scanln()
 }
 
 type pointerInfo struct {
