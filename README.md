@@ -20,13 +20,13 @@
 
 首选方式:
 
-	go get github.com/realint/dbgutil
+	go get github.com/chinamerp/dbgutil
 
 也可以手工从github下载最新版的代码放到自己项目中。
 
 在需要调试的代码中使用以下方式引用调试模块:
 
-	import "github.com/realint/dbgutil"
+	import "github.com/chinamerp/dbgutil"
 
 示例 - 输出变量
 =======
